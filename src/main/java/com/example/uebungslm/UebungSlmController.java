@@ -6,8 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UebungSlmController {
 
+    UebungSlm uebungSlm = new UebungSlm();
+
     @RequestMapping("/randomNumber")
     public int randomNumber(){
-        return (int) (Math.random()*(100-0))+0;
+        return uebungSlm.randomNumber();
     }
 }
